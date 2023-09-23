@@ -6,12 +6,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        final String[] choices ={"камень", "ножницы", "бумага"};
-        int compChoice = random.nextInt(choices.length);
+        //final String[] choices ={"камень", "ножницы", "бумага"};
+        int compChoice = random.nextInt(3);
 
         System.out.println("начало игры");
         System.out.println("выберите вариант");
-        System.out.println("0. камень\n" + "1. ножницы\n" + "2. бумага\n");
+        System.out.println("""
+                0. камень
+                1. ножницы
+                2. бумага
+                """);
         int playerChoice = scanner.nextInt()-1;
 
         System.out.println(compChoice);
